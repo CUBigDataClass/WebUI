@@ -5,36 +5,8 @@
 					 "location" => $_GET['location']);
 					 
 	require('arrays.php');
-	
-	// Functions
-	
-	function bad_params($param)
-	{
-		echo "Bad " . $param . " parameter. <a href=\"stats.html\">Go back</a>.";
-	};
-	
-	// Request Handler
-	/*				 
-	if($request['type'] != "Literacy" && $request['type'] != "HashFreq" && $request['type'] != "WordFreq")
-		bad_params("type");
-		
-	else if($request['s_date'] != 2 && $request['s_date'] != 3 && $request['s_date'] != 4)
-		bad_params("start date");
-	
-	else if($request['e_date'] != 2 && $request['e_date'] != 3 && $request['e_date'] != 4)
-		bad_params("end date");
-		
-	else if($request['e_date'] < $request['s_date'])
-		bad_params("date range");
-		
-	else if(!in_array($request['location'], $state_names))
-		bad_params("location");*/
-	if(false) {echo "lolwut";}
-	else
-	{
-		// Do all the good shit here
 	?>
-        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -45,12 +17,6 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
-    <style type="text/css">
-	.map_render{
-		width: 100%;	
-	}
-	</style>
     
     </head>
     <body>
@@ -213,41 +179,7 @@
         <!-- MAP GOES HERE -->
         <div class="row">
         	<div class="col-md-offset-1 col-md-10">
-                <?php
-					// This is where we pass off our parameters to python and then render the map it sends back. For now, here's a static map:
-					
-					if($request['type'] == "Literacy" && $request['location'] == "ALL")
-					{
-						echo "<br/><br/><a name=\"map\"></a><h1 style=\"text-align:center\">" . $us_state_abbrevs_names[$request['location']] . "</h1><img class=\"map_render\" src=\"US_Literacy.png\">";
-					}
-					else if($request['type'] == "Literacy" && $request['location'] == "OAK")
-					{
-						echo "<br/><br/><a name=\"map\"></a><h1 style=\"text-align:center\">Oakland</h1><img class=\"map_render\" src=\"Oakland.png\">";
-					}
-					else if($request['type'] == "Literacy" && $request['location'] == "DEN")
-                                        {
-                                                echo "<br/><br/><a name=\"map\"></a><h1 style=\"text-align:center\">Denver</h1><img class=\"map_render\" src=\"Denver.png\">";
-                                        }
-					else if($request['type'] == "Literacy" && $request['location'] == "NYC")
-                                        {
-                                                echo "<br/><br/><a name=\"map\"></a><h1 style=\"text-align:center\">New York City</h1><img class=\"map_render\" src=\"NYC.png\">";
-                                        }
-					else if($request['type'] == "Literacy" && $request['location'] == "DET")
-                                        {
-                                                echo "<br/><br/><a name=\"map\"></a><h1 style=\"text-align:center\">Detroit</h1><img class=\"map_render\" src=\"Detroit.png\">";
-                                        }					
-					else if($request['type'] == "Literacy" && $request['location'] == "NOR")
-                                        {
-                                                echo "<br/><br/><a name=\"map\"></a><h1 style=\"text-align:center\">New Orleans</h1><img class=\"map_render\" src=\"NewOrleans.png\">";
-                                        }
-					else if($request['type'] == "EmojiFreq" && $request['location'] == "ALL")
-                                        {
-                                                echo "<br/><br/><a name=\"map\"></a><h1 style=\"text-align:center\">Entire U.S.</h1><img class=\"map_render\" src=\"EmojiUS.png\">";
-                                        }
-
-					else
-						echo "<br/><br/><h1 style=\"text-align:center\">RENDER MAP HERE</h1>";
-				?>
+                
             </div>
         </div>
         
@@ -255,6 +187,3 @@
     
     </body>
     </html>
-    <?php
-	}
-?>
