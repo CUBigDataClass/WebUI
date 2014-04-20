@@ -14,9 +14,11 @@
     
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/graph.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" />
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/graph.js"></script>
     
     </head>
     <body>
