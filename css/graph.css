@@ -38,7 +38,8 @@
 	float: left;
 	height: 20px;
 	margin: 0;
-	width: 120px;
+	padding: 0px 30px;
+	width: 180px;
 }
 .legend span.icon {
 	background-position: 50% 0;
