@@ -19,7 +19,6 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/graph.js"></script>
-    
     </head>
     <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -183,43 +182,104 @@
         	<div class="col-md-offset-1 col-md-10">
                 <div id="wrapper">
                     <div class="chart">
-                        <h2>Population of endangered species from 2012 &ndash; 2016</h2>
+                        <h2 id="g_t"></h2>
                         <table id="data-table" border="1" cellpadding="10" cellspacing="0" summary="The effects of the zombie outbreak on the populations of endangered species from 2012 to 2016">
-                            <caption>Population in thousands</caption>
+                            <caption>Word Count</caption>
                             <thead>
                                 <tr>
                                     <td>&nbsp;</td>
-                                    <th scope="col">2012</th>
-                                    <th scope="col">2013</th>
-                                    <th scope="col">2014</th>
-                                    <th scope="col">2015</th>
-                                    <th scope="col">2016</th>
+                                    <!--<th scope="col" id="t1"></th>
+                                    <th scope="col" id="t2"></th>
+                                    <th scope="col" id="t3"></th>
+                                    <th scope="col" id="t4"></th>
+                                    <th scope="col" id="t5"></th>
+                                    <th scope="col" id="t6"></th>
+                                    <th scope="col" id="t7"></th>
+                                    <th scope="col" id="t8"></th>
+                                    <th scope="col" id="t9"></th>
+                                    <th scope="col" id="t10"></th>-->
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">Carbon Tiger</th>
-                                    <td>4080</td>
-                                    <td>6080</td>
-                                    <td>6240</td>
-                                    <td>3520</td>
-                                    <td>2240</td>
+                                    <th scope="row" id="t1"></th>
+                                    <td id="v1"></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Blue Monkey</th>
-                                    <td>5680</td>
-                                    <td>6880</td>
-                                    <td>5760</td>
-                                    <td>5120</td>
-                                    <td>2640</td>
+                                    <th scope="row" id="t2"></th>
+                                    <td id="v2"></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Tanned Zombie</th>
-                                    <td>1040</td>
-                                    <td>1760</td>
-                                    <td>2880</td>
-                                    <td>4720</td>
-                                    <td>7520</td>
+                                    <th scope="row" id="t3"></th>
+                                    <td id="v3"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t4"></th>
+                                    <td id="v4"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t5"></th>
+                                    <td id="v5"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t6"></th>
+                                    <td id="v6"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t7"></th>
+                                    <td id="v7"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t8"></th>
+                                    <td id="v8"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t9"></th>
+                                    <td id="v9"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t10"></th>
+                                    <td id="v10"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t11"></th>
+                                    <td id="v11"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t12"></th>
+                                    <td id="v12"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t13"></th>
+                                    <td id="v13"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t14"></th>
+                                    <td id="v14"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t15"></th>
+                                    <td id="v15"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t16"></th>
+                                    <td id="v16"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t17"></th>
+                                    <td id="v17"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t18"></th>
+                                    <td id="v18"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t19"></th>
+                                    <td id="v19"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" id="t20"></th>
+                                    <td id="v20"></td>
                                 </tr>
                             </tbody>
                         </table>

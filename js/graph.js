@@ -10,7 +10,64 @@
  */
 
 // Wait for the DOM to load everything, just to be safe
+var tweet = {
+  "city" : "Denver",
+  "data" : [
+    {"word" : "poop",
+     "count" : 4},
+    {"word" : "mountain",
+     "count" : 3},
+    {"word" : "13",
+     "count" : 1},
+    {"word" : "days",
+     "count" : 1},
+    {"word" : "denver",
+     "count" : 2},
+    {"word" : "da",
+     "count" : 1},
+    {"word" : "till",
+     "count" : 1},
+    {"word" : "matt",
+     "count" : 5},
+    {"word" : "braces",
+     "count" : 1},
+    {"word" : "nud",
+     "count" : 12},
+    {"word" : "kepler",
+     "count" : 3},
+    {"word" : "retard",
+     "count" : 1},
+    {"word" : "Conrad",
+     "count" : 5},
+    {"word" : "ultimate",
+     "count" : 8},
+    {"word" : "mamabird",
+     "count" : 5},
+    {"word" : "veins",
+     "count" : 1},
+    {"word" : "twerk",
+     "count" : 2},
+    {"word" : "cocaine",
+     "count" : 6},
+    {"word" : "nigga",
+     "count" : 10},
+    {"word" : "cumquat",
+     "count" : 4},
+    ]
+};
+
+function populateGraph(tweetData) {
+    $('#g_t').text(tweetData['city']);
+    for(var i = 1; i < 21; i++) {
+        $('#t' + i.toString()).text(tweetData['data'][i-1]['word']);
+        $('#v' + i.toString()).text(tweetData['data'][i-1]['count']);
+    }
+};
+
 $(document).ready(function() {
+
+	// Populate data
+	populateGraph(tweet);
 
 	// Create our graph from the data table and specify a container to put the graph in
 	createGraph('#data-table', '.chart');
@@ -60,7 +117,7 @@ $(document).ready(function() {
 			chartYMax: function() {
 				var chartData = this.chartData();
 				// Round off the value
-				var chartYMax = Math.ceil(Math.max.apply(Math, chartData) / 1000) * 1000;
+				var chartYMax = Math.ceil(Math.max.apply(Math, chartData));
 				return chartYMax;
 			},
 			// Get y-axis data from table cells
@@ -71,7 +128,7 @@ $(document).ready(function() {
 				var yAxisMarkings = 5;						
 				// Add required number of y-axis markings in order from 0 - max
 				for (var i = 0; i < yAxisMarkings; i++) {
-					yLegend.unshift(((chartYMax * i) / (yAxisMarkings - 1)) / 1000);
+					yLegend.unshift(((chartYMax * i) / (yAxisMarkings - 1)));
 				}
 				return yLegend;
 			},
@@ -122,7 +179,7 @@ $(document).ready(function() {
 				bars.push(barObj);
 			}
 			// Add bar groups to graph
-			barGroup.appendTo(barContainer);			
+			barGroup.appendTo(barContainer);		
 		});
 		
 		// Add heading to graph
