@@ -1,10 +1,38 @@
 <?php
-	$request = array("type" => $_GET['type'],
-					 "s_date" => intval($_GET['s_date']),
-					 "e_date" => intval($_GET['e_date']),
-					 "location" => $_GET['location']);
-					 
-	require('arrays.php');
+	$request = $_GET['city'];
+
+    $cities = array(
+        "New York",
+        "Los Angeles",
+        "Chicago",
+        "Dallas",
+        "Houston",
+        "Philadelphia",
+        "Washington",
+        "Maimi",
+        "Atlanta",
+        "Boston",
+        "San Francisco",
+        "Phoenix",
+        "Riverside",
+        "Detroit",
+        "Seattle",
+        "Minneapolis",
+        "San Diego",
+        "Tampa",
+        "St Louis",
+        "Baltimore",
+        "Denver",
+        "Pittsburgh",
+        "Charlotte",
+        "Portland",
+        "San Antonio",
+        "Orlando",
+        "Sacramento",
+        "Cincinnati",
+        "Cleveland",
+        "Kansas City",
+    );
 	?>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml">
