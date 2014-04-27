@@ -67,6 +67,7 @@ function populateGraph(tweetData) {
 $(document).ready(function() {
 
 	// Populate data
+	if(tweet != null)
 	populateGraph(tweet);
 
 	// Create our graph from the data table and specify a container to put the graph in
