@@ -47,6 +47,16 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/graph.js"></script>
+    <?php
+        if(!in_array($request, $cities)) {
+            echo "<script type=\"text/javascript\">\$(document).ready(function(e) {\$('#wrapper').css('display', 'none');});</script>";
+        }
+        // Display graph
+        else {
+            $m = new MongoClient('');
+            $db = $m->selectDB("");
+        }
+    ?>
     </head>
     <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -106,103 +116,50 @@
     
     <div class="container-fluid" style="margin-top: 70px;">
         <form method="get" action="request.php#map">
-        <div class="row">
-            <!--<div class="col-md-offset-3 col-md-2">-->
-	    <div class="col-md-offset-4 col-md-2">
-                <select class="form-control" name="type">
-                    <option selected value="<?php echo $request['type']; ?>"><?php echo $request['type']; ?></option>
-                    <option value="Literacy">Literacy</option>
-                    <!--<option value="Emotion">Emotion</option>-->
-                    <option value="EmojiFreq">Emoji Frequency</option>
-                    <option value="HashFreq">Hashtag Frequency</option>
-                </select>
-            </div>
-	    <!--
-            <div class="col-md-2">
-                <select class="form-control" name="s_date">
-                    <option selected value="<?php echo $request['s_date']; ?>"><?php echo $months[$request['s_date']]; ?></option>
-                    <option value="2">February</option>
-                    <option value="3">March</option>
-                    <option value="4">April</option>
-                </select><br />
-                <select class="form-control" name="e_date">
-                    <option selected value="<?php echo $request['e_date']; ?>"><?php echo $months[$request['e_date']]; ?></option>
-                    <option value="2">February</option>
-                    <option value="3">March</option>
-                    <option value="4">April</option>
-                </select>
-            </div>
-	    -->
-            <div class="col-md-2">
-                <select class="form-control" name="location">
-                    <option selected value="<?php echo $request['location']; ?>"><?php echo $us_state_abbrevs_names[$request['location']]; ?></option>
-                    <option value="ALL">U.S.A.</option>
-                    <option value="DEN">Denver</option>
-                    <option value="NYC">New York City</option>
-                    <option value="NOR">New Orleans</option>
-                    <option value="OAK">Oakland</option>
-                    <option value="DET">Detroit</option>
-                    <!--<option value="ALL">Entire U.S.</option>
-                    <option value="AL">Alabama</option> 
-                    <option value="AK">Alaska</option> 
-                    <option value="AZ">Arizona</option> 
-                    <option value="AR">Arkansas</option> 
-                    <option value="CA">California</option> 
-                    <option value="CO">Colorado</option> 
-                    <option value="CT">Connecticut</option> 
-                    <option value="DE">Delaware</option>
-                    <option value="FL">Florida</option> 
-                    <option value="GA">Georgia</option> 
-                    <option value="HI">Hawaii</option> 
-                    <option value="ID">Idaho</option> 
-                    <option value="IL">Illinois</option> 
-                    <option value="IN">Indiana</option> 
-                    <option value="IA">Iowa</option> 
-                    <option value="KS">Kansas</option> 
-                    <option value="KY">Kentucky</option> 
-                    <option value="LA">Louisiana</option> 
-                    <option value="ME">Maine</option> 
-                    <option value="MD">Maryland</option> 
-                    <option value="MA">Massachusetts</option> 
-                    <option value="MI">Michigan</option> 
-                    <option value="MN">Minnesota</option> 
-                    <option value="MS">Mississippi</option> 
-                    <option value="MO">Missouri</option> 
-                    <option value="MT">Montana</option> 
-                    <option value="NE">Nebraska</option> 
-                    <option value="NV">Nevada</option> 
-                    <option value="NH">New Hampshire</option> 
-                    <option value="NJ">New Jersey</option> 
-                    <option value="NM">New Mexico</option> 
-                    <option value="NY">New York</option> 
-                    <option value="NC">North Carolina</option> 
-                    <option value="ND">North Dakota</option> 
-                    <option value="OH">Ohio</option> 
-                    <option value="OK">Oklahoma</option> 
-                    <option value="OR">Oregon</option> 
-                    <option value="PA">Pennsylvania</option> 
-                    <option value="RI">Rhode Island</option> 
-                    <option value="SC">South Carolina</option> 
-                    <option value="SD">South Dakota</option> 
-                    <option value="TN">Tennessee</option> 
-                    <option value="TX">Texas</option> 
-                    <option value="UT">Utah</option> 
-                    <option value="VT">Vermont</option> 
-                    <option value="VA">Virginia</option> 
-                    <option value="WA">Washington</option> 
-                    <option value="WV">West Virginia</option> 
-                    <option value="WI">Wisconsin</option> 
-                    <option value="WY">Wyoming</option>-->
-                </select>
-            </div>
+    <div class="row">
+        <div class="col-md-offset-5 col-md-2">
+            <select class="form-control" name="city">
+                <option disabled selected value="">City</option>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Dallas">Dallas</option>
+                <option value="Houston">Houston</option>
+                <option value="Philadelphia">Philadelphia</option>
+                <option value="Washington">Washington</option>
+                <option value="Maimi">Maimi</option>
+                <option value="Atlanta">Atlanta</option>
+                <option value="Boston">Boston</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Riverside">Riverside</option>
+                <option value="Detroit">Detroit</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Minneapolis">Minneapolis</option>
+                <option value="San Diego">San Diego</option>
+                <option value="Tampa">Tampa</option>
+                <option value="St Louis">St Louis</option>
+                <option value="Baltimore">Baltimore</option>
+                <option value="Denver">Denver</option>
+                <option value="Pittsburgh">Pittsburgh</option>
+                <option value="Charlotte">Charlotte</option>
+                <option value="Portland">Portland</option>
+                <option value="San Antonio">San Antonio</option>
+                <option value="Orlando">Orlando</option>
+                <option value="Sacramento">Sacramento</option>
+                <option value="Cincinnati">Cincinnati</option>
+                <option value="Cleveland">Cleveland</option>
+                <option value="Kansas City">Kansas City</option>
+            </select>
         </div>
-        <br />
-        <div class="row">
-            <div class="col-md-offset-5 col-md-2" style="text-align: center;">
-                <button type="submit" class="btn btn-success">Get Map</button>
-            </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-offset-5 col-md-2" style="text-align: center;">
+            <button type="submit" class="btn btn-success">Find Word Count</button>
         </div>
-        </form>
+    </div>
+    </form>
         
         
         <!-- MAP GOES HERE -->
