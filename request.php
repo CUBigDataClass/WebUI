@@ -53,8 +53,8 @@
         }
         // Display graph
         else {
-            /*$m = new MongoClient('localhost');
-            $db = $m->selectDB("");*/
+            $m = new MongoClient('localhost');
+            $db = $m->selectDB("test");
         }
     ?>
     </head>
