@@ -9,7 +9,7 @@
         "Houston",
         "Philadelphia",
         "Washington",
-        "Maimi",
+        "Miami",
         "Atlanta",
         "Boston",
         "San Francisco",
@@ -417,7 +417,7 @@
                 <option value="Houston">Houston</option>
                 <option value="Philadelphia">Philadelphia</option>
                 <option value="Washington">Washington</option>
-                <option value="Maimi">Maimi</option>
+                <option value="Miami">Miami</option>
                 <option value="Atlanta">Atlanta</option>
                 <option value="Boston">Boston</option>
                 <option value="San Francisco">San Francisco</option>
