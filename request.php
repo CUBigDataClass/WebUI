@@ -52,7 +52,7 @@
         }
         // Display graph
         else {
-            /*$m = new MongoClient('localhost');
+            $m = new MongoClient('localhost');
             $db = $m->test;
             $collection = $db->WordCount;
 
@@ -62,7 +62,7 @@
 
             if($cursor->hasNext()) {
                 $tweet = $cursor->getNext();
-            }*/
+            }
         }
     ?>
     <script type="text/javascript">
@@ -78,17 +78,17 @@
          */
 
          <?php
-            /*if(isset($tweet)) {
+            if(isset($tweet)) {
                 echo "var tweet = " . $tweet . ";";
             }
             else {
                 echo "var tweet = null;";
-            }*/
+            }
          ?>
 
         // Wait for the DOM to load everything, just to be safe
         
-        // Sample Tweet
+        /* Sample Tweet
         var tweet = {
           "city" : "Denver",
           "data" : [
@@ -133,7 +133,7 @@
             {"word" : "cumquat",
              "count" : 4},
             ]
-        };
+        };*/
 
         function populateGraph(tweetData) {
             $('#g_t').text(tweetData['city']);
