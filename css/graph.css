@@ -11,7 +11,7 @@
 	width: 540px;
 }
 #figure {
-	height: 380px;
+	height: 430px;
 	position: relative;
 }
 #figure ul {
@@ -47,9 +47,9 @@
 	border-radius: 2px;
 	display: block;
 	float: left;
-	height: 8px;
+	height: 12px;
 	margin: 2px 10px 0 0;
-	width: 8px;	
+	width: 12px;	
 }
 
 /* X-Axis */
