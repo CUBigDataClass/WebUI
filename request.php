@@ -67,7 +67,7 @@
                 foreach ($temp['data'] as $data) {
                     $tweet['data'][$data['word']] = $data['count'];
                 }
-                arsort($tweet);
+                arsort($tweet['data']);
                 $tweet['city'] = $temp['city'];
             }
         }
