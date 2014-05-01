@@ -53,10 +53,11 @@
         // Display graph
         else {
             try {
-                $m = new MongoClient("mongodb://54.186.147.213");
+                $m = new MongoClient("mongodb://ubuntu:@54.186.147.213");
             } catch (Exception $e) {
                 echo $e;   
             }
+            var_dump($m);
             /*$db = $m->test;
             $collection = $db->WordCount;
 
