@@ -64,10 +64,18 @@
                 $temp = $cursor->getNext();
                 $tweet = array();
                 $tweet['data'] = array();
+                $nud = array();
                 foreach ($temp['data'] as $data) {
-                    $tweet['data'][$data['word']] = $data['count'];
+                    $nud[$data['word']] = array($data['count'];
                 }
-                arsort($tweet['data']);
+                arsort($nud);
+                $i = 0;
+                foreach ($nud as $key => $value) {
+                    if($i++ >= 20) {
+                        break;
+                    }
+                    $tweet['data'][] = array("word" => $key, "count" => $value);
+                }
                 $tweet['city'] = $temp['city'];
             }
         }
