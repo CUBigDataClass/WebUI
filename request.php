@@ -52,9 +52,9 @@
         }
         // Display graph
         else {
-            /*$m = new MongoClient('mongodb://54.186.147.213');
+            $m = new MongoClient("mongod://54.186.147.213");
             print_r($m);
-            $db = $m->test;
+            /*$db = $m->test;
             $collection = $db->WordCount;
 
             // Get the city
