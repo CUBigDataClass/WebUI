@@ -52,9 +52,8 @@
         }
         // Display graph
         else {
-            phpinfo();
-            /*$m = new Mongo("mongodb://54.186.147.213");
-            $db = $m->test;
+            $m = new Mongo("mongodb://54.186.147.213");
+            /*$db = $m->test;
             $collection = $db->WordCount;
 
             // Get the city
