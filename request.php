@@ -79,7 +79,7 @@
 
          <?php
             if(isset($tweet)) {
-                echo "var tweet = " . $tweet . ";";
+                echo "var tweet = " . json_encode($tweet) . ";";
             }
             else {
                 echo "//No DB Found\nvar tweet = null;";
