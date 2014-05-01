@@ -82,7 +82,7 @@
                 echo "var tweet = " . $tweet . ";";
             }
             else {
-                echo "var tweet = null;";
+                echo "//No DB Found\nvar tweet = null;";
             }
          ?>
 
