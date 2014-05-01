@@ -66,7 +66,7 @@
                 $tweet['data'] = array();
                 $nud = array();
                 foreach ($temp['data'] as $data) {
-                    $nud[$data['word']] = array($data['count'];
+                    $nud[$data['word']] = $data['count'];
                 }
                 arsort($nud);
                 $i = 0;
