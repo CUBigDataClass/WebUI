@@ -52,7 +52,7 @@
         }
         // Display graph
         else {
-            $m = new MongoClient('54.186.147.213:27017');
+            $m = new MongoClient('mongodb://54.186.147.213');
             $db = $m->test;
             $collection = $db->WordCount;
 
