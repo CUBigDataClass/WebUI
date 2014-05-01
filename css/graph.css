@@ -29,11 +29,12 @@
 	background: #f0f0f0;
 	border-radius: 4px;
 	bottom: 0;
-	position: relative;
+	position: absolute;
 	text-align: center;
 	width: 540px;
 }
 .legend li {
+	font-size: 10px;
 	display: block;
 	float: left;
 	height: 20px;
@@ -46,9 +47,9 @@
 	border-radius: 2px;
 	display: block;
 	float: left;
-	height: 16px;
+	height: 8px;
 	margin: 2px 10px 0 0;
-	width: 16px;	
+	width: 8px;	
 }
 
 /* X-Axis */
