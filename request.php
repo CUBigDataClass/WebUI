@@ -61,7 +61,13 @@
             $cursor = $collection->find($query);
 
             if($cursor->hasNext()) {
-                $tweet = $cursor->getNext();
+                $temp = $cursor->getNext();
+                $tweet = array();
+                foreach ($data as $temp['data']) {
+                    $tweet[$data['word']] = $data['count'];
+                }
+                arsort($tweet);
+                $tweet['city'] = $temp['city'];
             }
         }
     ?>
@@ -147,7 +153,7 @@
 
             // Populate data
             if(tweet != null)
-            populateGraph(tweet);
+            //populateGraph(tweet);
 
             // Create our graph from the data table and specify a container to put the graph in
             createGraph('#data-table', '.chart');
