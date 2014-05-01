@@ -52,12 +52,12 @@
         }
         // Display graph
         else {
-            try {
+            //try {
                 $m = new Mongo("mongodb://54.186.147.213:27071");
-            } catch (MongoConnectionException $exception) {
-                print_r($exception->getMessage()) 
-            }
-            var_dump($m);
+            //} catch (MongoConnectionException $exception) {
+            //    print_r($exception->getMessage()) 
+            //}
+            //var_dump($m);
             /*$db = $m->test;
             $collection = $db->WordCount;
 
