@@ -63,6 +63,7 @@
             if($cursor->hasNext()) {
                 $temp = $cursor->getNext();
                 $tweet = array();
+                print_r($temp);
                 foreach ($data as $temp['data']) {
                     $tweet[$data['word']] = $data['count'];
                 }
