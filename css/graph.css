@@ -193,64 +193,64 @@
 	display: none;
 }
 .fig0 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(204,50,0)), color-stop(0.49, rgb(191,37,0)), color-stop(0.5, rgb(168,14,0)), color-stop(1.0, rgb(153,0,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(255,0,255)), color-stop(0.49, rgb(255,0,255)), color-stop(0.5, rgb(235,0,235)), color-stop(1.0, rgb(235,0,235)));
 }
 .fig1 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(217,63,0)), color-stop(0.49, rgb(204,50,0)), color-stop(0.5, rgb(181,27,0)), color-stop(1.0, rgb(166,12,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(120,0,120)), color-stop(0.49, rgb(120,0,120)), color-stop(0.5, rgb(139,0,139)), color-stop(1.0, rgb(139,0,139)));
 }
 .fig2 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(230,76,0)), color-stop(0.49, rgb(217,63,0)), color-stop(0.5, rgb(194,40,0)), color-stop(1.0, rgb(179,25,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(138,43,180)), color-stop(0.49, rgb(138,43,180)), color-stop(0.5, rgb(138,43,226)), color-stop(1.0, rgb(138,43,226)));
 }
 .fig3 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(243,89,0)), color-stop(0.49, rgb(230,76,0)), color-stop(0.5, rgb(207,53,0)), color-stop(1.0, rgb(192,38,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(25,25,80)), color-stop(0.49, rgb(25,25,80)), color-stop(0.5, rgb(25,25,120)), color-stop(1.0, rgb(25,25,120)));
 }
 .fig4 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(0,0,180)), color-stop(0.49, rgb(0,0,180)), color-stop(0.5, rgb(0,0,220)), color-stop(1.0, rgb(0,0,220)));
 }
 .fig5 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(65,100,200)), color-stop(0.49, rgb(65,100,200)), color-stop(0.5, rgb(65,105,245)), color-stop(1.0, rgb(65,105,245)));
 }
 .fig6 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(127,255,212)), color-stop(0.49, rgb(127,255,212)), color-stop(0.5, rgb(64,224,208)), color-stop(1.0, rgb(64,224,208)));
 }
 .fig7 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(175,238,238)), color-stop(0.49, rgb(175,238,238)), color-stop(0.5, rgb(0,255,255)), color-stop(1.0, rgb(0,255,255)));
 }
 .fig8 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(60,179,113)), color-stop(0.49, rgb(60,179,113)), color-stop(0.5, rgb(32,178,170)), color-stop(1.0, rgb(32,178,170)));
 }
 .fig9 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(0,155,0)), color-stop(0.49, rgb(0,155,0)), color-stop(0.5, rgb(0,128,0)), color-stop(1.0, rgb(0,128,0)));
 }
 .fig10 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(50,205,50)), color-stop(0.49, rgb(50,205,50)), color-stop(0.5, rgb(0,128,0)), color-stop(1.0, rgb(0,128,0)));
 }
 .fig11 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(173,255,47)), color-stop(0.49, rgb(173,255,47)), color-stop(0.5, rgb(127,255,0)), color-stop(1.0, rgb(127,255,0)));
 }
 .fig12 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(220,230,0)), color-stop(0.49, rgb(220,230,0)), color-stop(0.5, rgb(154,195,50)), color-stop(1.0, rgb(154,195,50)));
 }
 .fig13 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(255,255,0)), color-stop(0.49, rgb(255,255,0)), color-stop(0.5, rgb(225,225,0)), color-stop(1.0, rgb(225,225,0)));
 }
 .fig14 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(218,165,32)), color-stop(0.49, rgb(218,165,32)), color-stop(0.5, rgb(255,205,0)), color-stop(1.0, rgb(255,205,0)));
 }
 .fig15 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(189,183,107)), color-stop(0.49, rgb(189,183,107)), color-stop(0.5, rgb(225,230,140)), color-stop(1.0, rgb(225,230,140)));
 }
 .fig16 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(255,140,0)), color-stop(0.49, rgb(255,140,0)), color-stop(0.5, rgb(235,140,0)), color-stop(1.0, rgb(235,140,0)));
 }
 .fig17 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(256,102,0)), color-stop(0.5, rgb(255,145,0)), color-stop(1.0, rgb(255,145,0)));
 }
 .fig18 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(220,0,0)), color-stop(0.49, rgb(220,0,0)), color-stop(0.5, rgb(255,99,71)), color-stop(1.0, rgb(255,99,71)));
 }
 .fig19 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(256,102,0)), color-stop(0.49, rgb(243,89,0)), color-stop(0.5, rgb(220,66,0)), color-stop(1.0, rgb(205,51,0)));
+background: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgb(178,34,50)), color-stop(0.49, rgb(178,34,50)), color-stop(0.5, rgb(220,20,60)), color-stop(1.0, rgb(220,20,60)));
 }
 /*.fig1 {
 	background: -webkit-gradient(linear, left top, right top, color-stop(0.0, #65c2e8), color-stop(0.49, #55b3e1), color-stop(0.5, #3ba6dc), color-stop(1.0, #2794d4));
