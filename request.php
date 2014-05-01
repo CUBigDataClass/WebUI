@@ -52,7 +52,7 @@
         }
         // Display graph
         else {
-            $m = new Mongo("localhost");
+            phpinfo();
             /*$m = new Mongo("mongodb://54.186.147.213");
             $db = $m->test;
             $collection = $db->WordCount;
