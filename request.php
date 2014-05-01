@@ -63,8 +63,9 @@
             if($cursor->hasNext()) {
                 $temp = $cursor->getNext();
                 $tweet = array();
+                $tweet['data'] = array();
                 foreach ($temp['data'] as $data) {
-                    $tweet[$data['word']] = $data['count'];
+                    $tweet['data'][$data['word']] = $data['count'];
                 }
                 arsort($tweet);
                 $tweet['city'] = $temp['city'];
