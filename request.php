@@ -53,7 +53,8 @@
         // Display graph
         else {
             $m = new MongoClient('mongodb://54.186.147.213');
-            $db = $m->test;
+            print_r($m);
+            /*$db = $m->test;
             $collection = $db->WordCount;
 
             // Get the city
@@ -62,7 +63,7 @@
 
             if($cursor->hasNext()) {
                 $tweet = $cursor->getNext();
-            }
+            }*/
         }
     ?>
     <script type="text/javascript">
