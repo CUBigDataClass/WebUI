@@ -53,7 +53,7 @@
         // Display graph
         else {
             try {
-                $m = new Mongo("mongodb://ubuntu@54.186.147.213");
+                $m = new Mongo("mongodb://54.186.147.213");
             } catch (Exception $e) {
                 echo $e; 
             }
