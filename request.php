@@ -425,37 +425,38 @@
         <div class="col-md-offset-5 col-md-2">
             <select class="form-control" name="city">
                 <option disabled selected value="">City</option>
-                <option value="New York">New York</option>
-                <option value="Los Angeles">Los Angeles</option>
-                <option value="Chicago">Chicago</option>
-                <option value="Dallas">Dallas</option>
-                <option value="Houston">Houston</option>
-                <option value="Philadelphia">Philadelphia</option>
-                <option value="Washington">Washington</option>
-                <option value="Miami">Miami</option>
                 <option value="Atlanta">Atlanta</option>
-                <option value="Boston">Boston</option>
-                <option value="San Francisco">San Francisco</option>
-                <option value="Phoenix">Phoenix</option>
-                <option value="Riverside">Riverside</option>
-                <option value="Detroit">Detroit</option>
-                <option value="Seattle">Seattle</option>
-                <option value="Minneapolis">Minneapolis</option>
-                <option value="San Diego">San Diego</option>
-                <option value="Tampa">Tampa</option>
-                <option value="St Louis">St Louis</option>
-                <option value="Baltimore">Baltimore</option>
-                <option value="Denver">Denver</option>
-                <option value="Pittsburgh">Pittsburgh</option>
-                <option value="Charlotte">Charlotte</option>
-                <option value="Portland">Portland</option>
-                <option value="San Antonio">San Antonio</option>
-                <option value="Orlando">Orlando</option>
-                <option value="Sacramento">Sacramento</option>
-                <option value="Cincinnati">Cincinnati</option>
-                <option value="Cleveland">Cleveland</option>
-                <option value="Kansas City">Kansas City</option>
-            </select>
+		<option value="Baltimore">Baltimore</option>
+		<option value="Boston">Boston</option>
+		<option value="Charlotte">Charlotte</option>
+		<option value="Chicago">Chicago</option>
+		<option value="Cincinnati">Cincinnati</option>
+		<option value="Cleveland">Cleveland</option>
+		<option value="Dallas">Dallas</option>
+		<option value="Denver">Denver</option>
+		<option value="Detroit">Detroit</option>
+		<option value="Houston">Houston</option>
+		<option value="Kansas City">Kansas City</option>
+		<option value="Los Angeles">Los Angeles</option>
+		<option value="Maimi">Maimi</option>
+		<option value="Minneapolis">Minneapolis</option>
+		<option value="New York">New York</option>
+		<option value="Orlando">Orlando</option>
+		<option value="Pittsburgh">Pittsburgh</option>
+		<option value="Phoenix">Phoenix</option>
+		<option value="Philadelphia">Philadelphia</option>
+		<option value="Portland">Portland</option>
+		<option value="Riverside">Riverside</option>
+		<option value="Sacramento">Sacramento</option>
+		<option value="San Antonio">San Antonio</option>
+		<option value="San Diego">San Diego</option>
+		<option value="San Francisco">San Francisco</option>
+		<option value="Seattle">Seattle</option>
+		<option value="St Louis">St Louis</option>
+		<option value="Tampa">Tampa</option>
+		<option value="Washington">Washington</option>
+
+	    </select>
         </div>
     </div>
     <br />
