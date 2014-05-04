@@ -438,7 +438,7 @@
 		<option value="Houston">Houston</option>
 		<option value="Kansas City">Kansas City</option>
 		<option value="Los Angeles">Los Angeles</option>
-		<option value="Miami">Maimi</option>
+		<option value="Miami">Miami</option>
 		<option value="Minneapolis">Minneapolis</option>
 		<option value="New York">New York</option>
 		<option value="Orlando">Orlando</option>
