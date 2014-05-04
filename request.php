@@ -5,13 +5,6 @@
         "New York",
         "Los Angeles",
         "Chicago",
-<?php
-	$request = $_GET['city'];
-
-    $cities = array(
-        "New York",
-        "Los Angeles",
-        "Chicago",
         "Dallas",
         "Houston",
         "Philadelphia",
