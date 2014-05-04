@@ -13,7 +13,7 @@
         "Atlanta",
         "Boston",
         "San Francisco",
-        "Pheonix",
+        //"Pheonix",
         "Riverside",
         "Detroit",
         "Seattle",
@@ -443,7 +443,7 @@
 		<option value="New York">New York</option>
 		<option value="Orlando">Orlando</option>
 		<option value="Pittsburgh">Pittsburgh</option>
-		<option value="Pheonix">Phoenix</option>
+		<!--<option value="Pheonix">Phoenix</option>-->
 		<option value="Philadelphia">Philadelphia</option>
 		<option value="Portland">Portland</option>
 		<option value="Riverside">Riverside</option>
