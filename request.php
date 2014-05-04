@@ -14,7 +14,7 @@
         "Boston",
         "San Francisco",
         //"Pheonix",
-        "Riverside",
+        //"Riverside",
         "Detroit",
         "Seattle",
         "Minneapolis",
@@ -446,7 +446,7 @@
 		<!--<option value="Pheonix">Phoenix</option>-->
 		<option value="Philadelphia">Philadelphia</option>
 		<option value="Portland">Portland</option>
-		<option value="Riverside">Riverside</option>
+		<!--<option value="Riverside">Riverside</option>-->
 		<option value="Sacramento">Sacramento</option>
 		<option value="San Antonio">San Antonio</option>
 		<option value="San Diego">San Diego</option>
