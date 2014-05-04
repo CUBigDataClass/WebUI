@@ -13,7 +13,7 @@
         "Atlanta",
         "Boston",
         "San Francisco",
-        "Phoenix",
+        "Pheonix",
         "Riverside",
         "Detroit",
         "Seattle",
@@ -438,12 +438,12 @@
 		<option value="Houston">Houston</option>
 		<option value="Kansas City">Kansas City</option>
 		<option value="Los Angeles">Los Angeles</option>
-		<option value="Maimi">Maimi</option>
+		<option value="Miami">Maimi</option>
 		<option value="Minneapolis">Minneapolis</option>
 		<option value="New York">New York</option>
 		<option value="Orlando">Orlando</option>
 		<option value="Pittsburgh">Pittsburgh</option>
-		<option value="Phoenix">Phoenix</option>
+		<option value="Pheonix">Phoenix</option>
 		<option value="Philadelphia">Philadelphia</option>
 		<option value="Portland">Portland</option>
 		<option value="Riverside">Riverside</option>
