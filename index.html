@@ -122,13 +122,71 @@
         <br>
         <h5 class="panel-title">Project History</h5>
         <br>
-        History goes here     
+        As new information becomes available, a successful group needs to 
+        adapt to the changing world around them.  As the semester progressed 
+        and we were exposed to different areas of Big Data, our team examined, 
+        explored, and shifted directions when appropriate.  
+        <br>
+        <br>
+        Our project began as an attempt to examine tweets for emotional context
+        and correlate that with a location.  By doing this we could compare how
+        “happy” one location was to another.  We felt that this data could be 
+        used for a wide range of people, from relators selling a particular 
+        neighborhood to NGOs looking to focus their efforts.  
+        <br>
+        <br>
+        To that end we created a script to begin gathering geotagged tweets on 
+        developer systems.  This provided us with sample data, at a scale that 
+        we could work with easily as we proceeded.  We also explored differnt 
+        models for grouping and displaying these data points on a Google Map
+        API.
+        <br>
+        <br>
+        We examined using the Mechanical Turk to score lists of words on a 
+        relative scale, say 1-10, but settled on a less precise, but easier to 
+        obtain positive/negative classification.  
+        <br>
+        <br>
+        A Hadoop instance was spun up but quickly abandoned as the batch nature
+        of Hadoop did not fit with desire to present real time, changing 
+        results.  Similarly Storm was investigated, but due to account 
+        restrictions, only a single server deployment was completed.  It was 
+        determined that while Storm would allow greater scalability, the amount
+        of data we were dealing with did not warrant the complexity tradeoff.  
+        <br>
+        <br>
+        We settled on Kafka queues and simply running against a larger EC2 
+        instance as a solid foundation.  This removed much of the complexity in
+        other technology stacks, and met our performance needs at a reasonable 
+        cost.  The tradeoff of hardware VS developer time was very evident here.
+        Kafka and Zookeeper also provided a path forward to span multiple 
+        machines if growth warrants it, without needing to a complete rewrite of
+        our backend processing structure.     
+        <br>
+        <br>
+        Along the way, we explored LSA techniques for pullting other types of 
+        information out of the tweet stream, eventually settling on some basic
+        that served as proof of concept processing points.
         <br>
         <br>
         <br>
         <h5 class="panel-title">Future Applications</h5>
         <br>
-        Future ways to make mad billz goes here 
+        As stated previously, what we have dreaded is not so much a complete 
+        product, but a flexible framework which can be tailored to future 
+        situations.  Simple changes could include:
+        <ul>Narrowing the radius of locations to increase the precision of the 
+            data
+        <ul>Expand the number of locations processed
+        <ul>Customizing the list of words searched for - Instead of excluding 
+            words we deem non-important, shifting to look for specific terms 
+            such as “Coke” and “Pepsi” is trivial.
+        <ul>Scaling the infrastructure - moving the processing onto a series of
+            servers should be possible while still using the Kafka/Zookeeper 
+            framework
+        <ul>Distributing the database -  A single instance of MongoDB is both 
+            a bottleneck in performance and at risk as a single point of failure
+        <ul>Improving insertion and search algorithms for the terms.
       </div>
     </div>
  </div>
