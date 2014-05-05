@@ -175,18 +175,21 @@
         As stated previously, what we have dreaded is not so much a complete 
         product, but a flexible framework which can be tailored to future 
         situations.  Simple changes could include:
-        <ul>Narrowing the radius of locations to increase the precision of the 
-            data
-        <ul>Expand the number of locations processed
-        <ul>Customizing the list of words searched for - Instead of excluding 
-            words we deem non-important, shifting to look for specific terms 
-            such as “Coke” and “Pepsi” is trivial.
-        <ul>Scaling the infrastructure - moving the processing onto a series of
-            servers should be possible while still using the Kafka/Zookeeper 
-            framework
-        <ul>Distributing the database -  A single instance of MongoDB is both 
-            a bottleneck in performance and at risk as a single point of failure
-        <ul>Improving insertion and search algorithms for the terms.
+        <ul>
+          <li>Narrowing the radius of locations to increase the precision of
+              the data
+          <li>Expand the number of locations processed
+          <li>Customizing the list of words searched for - Instead of excluding 
+              words we deem non-important, shifting to look for specific terms 
+              such as “Coke” and “Pepsi” is trivial.
+          <li>Scaling the infrastructure - moving the processing onto a series 
+              of servers should be possible while still using the 
+              Kafka/Zookeeper framework
+          <li>Distributing the database -  A single instance of MongoDB is both 
+              a bottleneck in performance and at risk as a single point of 
+              failure
+          <li>Improving insertion and search algorithms for the terms.
+        </ul>
       </div>
     </div>
  </div>
