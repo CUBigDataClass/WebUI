@@ -38,7 +38,7 @@
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Twitter EmotiMap</title>
+    <title>TopXX</title>
     
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -374,7 +374,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Twitter EmotiMap</a>
+          <a class="navbar-brand" href="#">TopXX</a>
         </div>
     
         <!-- Collect the nav links, forms, and other content for toggling -->
