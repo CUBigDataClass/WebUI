@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Twitter EmotiMap</title>
+<title>TopXX</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -67,21 +67,68 @@
 </nav>
 
 <div class="container-fluid" style="margin-top: 100px;">
- 			<div class="col-md-7">
-				<div class="panel panel-default">
-  					<div class="panel-heading">
-  	  				<h5 class="panel-title">Our Mission</h5>
-  					</div>
- 	<div class="panel-body">
-  	We set out with a goal of using “Big Data” to create a platform that will aggregate Twitter data (“tweets”) into an interactive and visually appealing representation.  In order to achieve this goal, we collected metadata from the Twitter fire hose using Twitter APIs.  The metadata include:  geolocation of the “tweet”, the grammatical content of the “tweet” itself, and the timestamp of the “tweet”.  We are using a map of the Continental United States as our visual interface, and we have chosen to represent the prevalence of literacy (based on words in the “tweet”) in the U.S. with heat signatures.
-	<br><br>
-	A second goal of this project is to create an interactive representation.  This was accomplished through our Twitter “EmotiMap” page, where users have the opportunity to select various options in the ultimate goal of creating a customized representation of a literacy map.
-	<br><br>
-	Finally, we set to make this map visually appealing.  We have created a user flow that is easily navigable and inviting for users to enjoy their experience with our EmotiMap.
-	<br><br>
-	Our motivation for this project is to demonstrate how “Big Data” is relevant and meaningful to users of all backgrounds.  We decided on literacy as our plotted measure, because we thought it would be fascinating to see where there are parts of the U.S. that use less words from the dictionary than other parts.  It was also in our interest to see whether these changes are moderated by other factors, such as time.  In an attempt to show the awesome power of “Big Data”, we thought Twitter to be a valid platform to access the literacy information.  Through this project, we hope to demonstrate the effectiveness of our EmotiMap representation as a way to visualize literacy in the United States.
- 	</div> 
- 	</div>
+  <div class="col-md-7">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h5 class="panel-title">The Project</h5>
+      </div>
+      <div class="panel-body">
+        TopXX (pronounced Topics) applies Big Data technology and concepts to 
+        examine the Twitter Firehose and extract the top 20 words that have 
+        been tweeted for major cities. These words are then displayed in a 
+        visually dynamic manner to focus interest in the data.
+        <br><br>
+        By creating a framework to gather, parse, and analyze tweets, we have 
+        demonstrated a platform that can be used for deeper analysis of topics 
+        and trends in targeted market segments.
+      </div> 
+
+      <div class="panel-heading">
+        <h5 class="panel-title">Data Workflow</h5>
+      </div>
+
+      <div class="panel-body">
+        A visual representation of the project workflow is presented under the
+        ‘About' section.
+        <br><br>
+        A server running in AWS EC2 uses the public Twitter API to gather 
+        tweets from their firehose.  The API is used to filter the tweets to 
+        those with geotagging enabled, in English, and from the Unites States.
+        As the tweets come in, they are converted to strings and placed in a 
+        Kafka queue.  
+        <br><br>
+        This queue serves as a data source that Zookeeper vends out to a Kafka 
+        consumer which first checks to see if the tweet is in one of our target
+        cities.  If it is, the script cleans up the tweet text by removing 
+        “filler” words such as “I”, “and”, and “or” which do not convey 
+        information we need.  It also tokenizes, converts to lower case, and 
+        removes @ and # data.   
+        <br><br>
+        Once the data is parsed, its word count is inserted into a MongoDB 
+        storage instance, with one JSON document for each city.  If the word 
+        has not been seen before, it is added to the document.  If it exists, 
+        the count is incremented.
+        <br><br>
+        After the data is stored, a separate EC2 instance, serving as our web 
+        server takes over.  When a user selects a city, a PHP request is sent 
+        to the backend server’s MongoDB.  It returns an array of the top 20 
+        tweeted words for that city, and the associated count.  The web server 
+        front end can then present a color coded histogram of the data.
+      </div>
+
+      <div class="panel-heading">
+        <h5 class="panel-title">Project History</h5>
+      </div>
+      <div class="panel-body">
+      
+      </div>
+      <div class="panel-heading">
+        <h5 class="panel-title">Future Applications</h5>
+      </div>
+      <div class="panel-body">
+      
+      </div>
+    </div>
  </div>
 </div>  
 
