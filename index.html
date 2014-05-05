@@ -85,41 +85,6 @@
         <br>
         <br>
         <br>
-        <h5 class="panel-title">Data Workflow</h5>
-        <br>
-        A visual representation of the project workflow is presented under the
-        ‘About' section.
-        <br>
-        <br>
-        A server running in AWS EC2 uses the public Twitter API to gather 
-        tweets from their firehose.  The API is used to filter the tweets to 
-        those with geotagging enabled, in English, and from the Unites States.
-        As the tweets come in, they are converted to strings and placed in a 
-        Kafka queue.  
-        <br>
-        <br>
-        This queue serves as a data source that Zookeeper vends out to a Kafka 
-        consumer which first checks to see if the tweet is in one of our target
-        cities.  If it is, the script cleans up the tweet text by removing 
-        “filler” words such as “I”, “and”, and “or” which do not convey 
-        information we need.  It also tokenizes, converts to lower case, and 
-        removes @ and # data.   
-        <br>
-        <br>
-        Once the data is parsed, its word count is inserted into a MongoDB 
-        storage instance, with one JSON document for each city.  If the word 
-        has not been seen before, it is added to the document.  If it exists, 
-        the count is incremented.
-        <br>
-        <br>
-        After the data is stored, a separate EC2 instance, serving as our web 
-        server takes over.  When a user selects a city, a PHP request is sent 
-        to the backend server’s MongoDB.  It returns an array of the top 20 
-        tweeted words for that city, and the associated count.  The web server 
-        front end can then present a color coded histogram of the data.
-        <br>
-        <br>
-        <br>
         <h5 class="panel-title">Our Mission</h5>
         <br>
         We set out with goals of using “Big Data” to create a platform that 
@@ -166,6 +131,41 @@
         Through this project, we hope to demonstrate the effectiveness of our 
         graphical representation as a way to visualize word frequency for Tweets
         in the United States.
+        <br>
+        <br>
+        <br>
+        <h5 class="panel-title">Data Workflow</h5>
+        <br>
+        A visual representation of the project workflow is presented under the
+        ‘About' section.
+        <br>
+        <br>
+        A server running in AWS EC2 uses the public Twitter API to gather 
+        tweets from their firehose.  The API is used to filter the tweets to 
+        those with geotagging enabled, in English, and from the Unites States.
+        As the tweets come in, they are converted to strings and placed in a 
+        Kafka queue.  
+        <br>
+        <br>
+        This queue serves as a data source that Zookeeper vends out to a Kafka 
+        consumer which first checks to see if the tweet is in one of our target
+        cities.  If it is, the script cleans up the tweet text by removing 
+        “filler” words such as “I”, “and”, and “or” which do not convey 
+        information we need.  It also tokenizes, converts to lower case, and 
+        removes @ and # data.   
+        <br>
+        <br>
+        Once the data is parsed, its word count is inserted into a MongoDB 
+        storage instance, with one JSON document for each city.  If the word 
+        has not been seen before, it is added to the document.  If it exists, 
+        the count is incremented.
+        <br>
+        <br>
+        After the data is stored, a separate EC2 instance, serving as our web 
+        server takes over.  When a user selects a city, a PHP request is sent 
+        to the backend server’s MongoDB.  It returns an array of the top 20 
+        tweeted words for that city, and the associated count.  The web server 
+        front end can then present a color coded histogram of the data.
       </div>
     </div>
  </div>
